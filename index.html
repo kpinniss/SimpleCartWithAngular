@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <link rel="stylesheet" href="ngApp/css/app.css">
+    <title>Document</title>
+    <base href="/">
+</head>
+<body ng-controller="Index as index">
+     <li>
+         <ul><a href="/">Home</a></ul>
+         <ul><a href="/about">About</a></ul>
+         <ul><a href="/shop">Shop!</a></ul>
+     </li>
+
+    
+
+     
+     
+    <div>
+        <ui-view></ui-view>
+    </div>
+    
+    <!---lib files------>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/angular-bootstrap-npm/dist/angular-bootstrap.js"></script>
+    <script src="node_modules/angular-bootstrap-npm/dist/angular-bootstrap-tps.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!---controllers services---->
+    <script src="ngApp/controllers/Index.js"></script>
+    <script src="ngApp/controllers/about.js"></script>
+    <script src="ngApp/controllers/shopping.js"></script>
+    <script src="ngApp/services/MainService.js"></script>
+    <!----modules other------>
+    <script src="ngApp/app.js"></script>
+</body>
+</html>

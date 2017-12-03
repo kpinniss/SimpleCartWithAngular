@@ -1,0 +1,14 @@
+<h1>{{ctrl.message}}</h1>
+<img src="https://cdn.shopify.com/s/files/1/0915/8624/t/18/assets/shopping-cart-img.jpg?4968718452075081738" alt="">:{{ctrl.cart.length}}
+<p>Cart Total:</p>:{{ctrl.total}}
+<div>
+    <ul>
+        <li ng-repeat="item in ctrl.items">
+            <a href={{item.url}}>
+                <img src={{item.img}} alt="">
+            </a>
+            <button ng-click="ctrl.addToCart(item)">Add to Cart</button>
+            {{item.name}} - {{item.price}}
+        </li>
+    </ul>
+</div>
